@@ -1,4 +1,4 @@
-package com.oskarkraak;
+package com.oskarkraak.discordimagesender;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.OutputStream;
