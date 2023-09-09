@@ -1,4 +1,4 @@
-package com.oskarkraak.discordimagesender.cdk;
+package com.oskarkraak.discordimagesender;
 
 import software.amazon.awscdk.App;
 import software.amazon.awscdk.services.events.Schedule;
