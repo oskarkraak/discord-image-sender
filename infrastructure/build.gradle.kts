@@ -15,5 +15,5 @@ dependencies {
 
 tasks.register<JavaExec>("runCdkApp") {
     classpath = sourceSets["main"].runtimeClasspath
-    mainClass = "com.oskarkraak.discordimagesender.cdk.ImageSenderApp"
+    mainClass = "com.oskarkraak.discordimagesender.ImageSenderApp"
 }
