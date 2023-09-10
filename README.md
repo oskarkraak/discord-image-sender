@@ -17,6 +17,8 @@ Requirements: An AWS account, node.js / npm installed
 
 ### Later deployements
 
-1. `aws configure sso`. This opens a browser window where you log in using your programmatic access credentials. Back in
-   the command line, you can skip all input prompts.
-2. `cmd /c "cd infrastructure && cdk deploy --profile PROFILE-NAME"` where PROFILE-NAME is the name of the profile you just configured.
+1. `aws configure sso`. For "SSO session name" you choose the session you configured during your first deployment. This
+   opens a browser window where you log in using your programmatic access credentials. Back in the command line, you can
+   skip all input prompts.
+2. `cmd /c "cd infrastructure && cdk deploy --profile PROFILE-NAME"` where PROFILE-NAME is the name of the profile you
+   just configured.
