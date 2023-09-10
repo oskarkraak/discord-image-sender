@@ -1,4 +1,19 @@
-# discord-image-sender
+# Discord Image Sender
+
+This is an application that allows you to easily set up a Discord bot that sends images based on a schedule.
+
+You create and provide:
+
+- an AWS account to host the application infrastructure
+- a Discord WebHook
+- an image link
+- a cron expression to schedule when the image will be sent.
+
+This application creates and provides for you:
+
+- the resources and infrastructure to host the bot
+- a trigger that automatically triggers the bot based on your schedule
+- the bot itself
 
 ## Configure
 
