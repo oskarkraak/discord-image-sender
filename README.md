@@ -1,5 +1,14 @@
 # discord-image-sender
 
+## Configure
+
+Edit the values in `CONFIG.properties`.
+
+To later change a scheduled image, put in the stack.name value of the scheduled image.
+Make changes to the other values as you please and deploy again.
+In case you forget your stack.name value, you can open the AWS Console and navigate to CloudFormation > Stacks, where
+you will find a list of all deployed Stacks with their names.
+
 ## Deploy
 
 ### First time
