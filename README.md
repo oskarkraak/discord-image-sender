@@ -4,10 +4,8 @@
 
 Edit the values in `CONFIG.properties`.
 
-To later change a scheduled image, put in the stack.name value of the scheduled image.
+To later change a scheduled image, put in the stack.name value you used to create the scheduled image.
 Make changes to the other values as you please and deploy again.
-In case you forget your stack.name value, you can open the AWS Console and navigate to CloudFormation > Stacks, where
-you will find a list of all deployed Stacks with their names.
 
 ## Deploy
 
@@ -31,3 +29,15 @@ Requirements: An AWS account, node.js / npm installed
    skip all input prompts.
 2. `cmd /c "cd infrastructure && cdk deploy --profile PROFILE-NAME"` where PROFILE-NAME is the name of the profile you
    just configured.
+
+## Delete
+
+To remove a scheduled image:
+- Set stack.name in `CONFIG.properties` to the value you used to create the scheduled image.
+- Run `cmd /c "cd infrastructure && cdk destroy STACK-NAME --profile PROFILE-NAME"` where STACK-NAME is your stack.name
+property. 
+
+## Troubleshooting
+- I forgot the stack.name value I used to create a scheduled image.
+  - Open the AWS Console and navigate to CloudFormation > Stacks. There,
+    you will find a list of all deployed Stacks with their names.
