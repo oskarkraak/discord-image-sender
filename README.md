@@ -48,9 +48,10 @@ Requirements: An AWS account, node.js / npm installed
 ## Delete
 
 To remove a scheduled image:
+
 - Set stack.name in `CONFIG.properties` to the value you used to create the scheduled image.
 - Run `cmd /c "cd infrastructure && cdk destroy STACK-NAME --profile PROFILE-NAME"` where STACK-NAME is your stack.name
-property. 
+  property.
 
 ## Cost
 
@@ -69,6 +70,7 @@ GB-seconds of compute, which is below the free tier limit of 400,000.
 - Example 2: You could have 4 images scheduled to be sent every minute. *This would send 175,320 images per month.*
 
 ## Troubleshooting
+
 - I forgot the stack.name value I used to create a scheduled image.
-  - Open the AWS Console and navigate to CloudFormation > Stacks. There,
-    you will find a list of all deployed Stacks with their names.
+    - Open the AWS Console and navigate to CloudFormation > Stacks. There,
+      you will find a list of all deployed Stacks with their names.
