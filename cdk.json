@@ -1,5 +1,6 @@
 {
   "app": "gradlew :software:build && gradlew :infrastructure:runCdkApp",
+  "versionReporting": false,
   "watch": {
     "include": [
       "**"
