@@ -1,5 +1,5 @@
 {
-  "app": "gradlew :software:build && gradlew :infrastructure:runCdkApp",
+  "app": "cd .. && gradlew :software:build && gradlew :infrastructure:runCdkApp",
   "versionReporting": false,
   "watch": {
     "include": [
